@@ -1,5 +1,4 @@
-#16.10.24
-#Jörn Markus Toomingas
+#16.10.24 Toomingas
 #Ülesanne03
 import turtle
 
