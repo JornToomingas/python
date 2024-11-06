@@ -16,7 +16,7 @@ for i in range(4):
     turtle.left(90)
 """
 
-
+"""
 #4
 d = 60
 for i in range(5):
@@ -24,7 +24,7 @@ for i in range(5):
     for i in range(4):
         turtle.fd(d)
         turtle.left(90)
-
+"""
 
 
 """
