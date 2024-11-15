@@ -91,28 +91,29 @@ def ruut(k):
             turtle.fd(100)
             turtle.lt(90)
 
-def suvaline():
+def suvaline(k):
     for i in range(k):
-        random.choice([viisnurk(1), ring(1), ruut(1)])
+        my_list = [viisnurk, ring, ruut]
+        random.choice(my_list)(1)
 
 
 
+loop = 1
 
-valik = int(input("1 - viisnurk\n2 - ring\n3 - ruut\n4 - suvaline\nLisa valik (1-4): "))
-kujunditeArv = int(input("Mitu kujundit soovid joonistada: "))
-if valik == 1:
-    viisnurk(kujunditeArv)
+while loop==1:
+    valik = int(input("1 - viisnurk\n2 - ring\n3 - ruut\n4 - suvaline\nLisa valik (1-4): "))
+    kujunditeArv = int(input("Mitu kujundit soovid joonistada: "))
+    if valik == 1:
+        viisnurk(kujunditeArv)
 
-elif valik == 2:
-    ring(kujunditeArv)
+    elif valik == 2:
+        ring(kujunditeArv)
 
-elif valik ==3:
-    ruut(kujunditeArv)
+    elif valik ==3:
+        ruut(kujunditeArv)
 
-else:
-    suvaline(kujunditeArv)
-
-
+    else:
+        suvaline(kujunditeArv)
 
 
 
