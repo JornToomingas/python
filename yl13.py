@@ -7,9 +7,8 @@ import turtle
 
 
 
-screen = turtle.Screen()
 t = turtle.Turtle()
-
+screen = turtle.Screen()
 
 
 #küsi kasutajalt numbrilist sisendit
@@ -32,4 +31,5 @@ for i in range(nr+1):
     turtle.fd(5)
     turtle.lt(90)
     turtle.fd(10*4)
+    
 turtle.done()
