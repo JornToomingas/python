@@ -1,4 +1,4 @@
-#08.11.24 Toomingas
+#15.11.24 Toomingas
 #Ülesanne 12
 import turtle
 """
@@ -49,4 +49,4 @@ def konto_haldur(saldo, toiming, summa):
 
 print(konto_haldur(20,"deposiit", pangakonto))
 print(konto_haldur(40,"deposiit", pangakonto))
-print(konto_haldur(50,"välavõte", pangakonto))
+print(konto_haldur(50,"väljavõte", pangakonto))
