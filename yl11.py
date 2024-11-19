@@ -78,8 +78,6 @@ def ring(k):
         turtle.rt(random.randint(0, 90))
         turtle.circle(360)
 
-
-
 def ruut(k):
     turtle.speed(0)
     for j in range(k):
@@ -97,12 +95,25 @@ def suvaline(k):
         random.choice(my_list)(1)
 
 
-
 loop = 1
 
 while loop==1:
-    valik = int(input("1 - viisnurk\n2 - ring\n3 - ruut\n4 - suvaline\nLisa valik (1-4): "))
-    kujunditeArv = int(input("Mitu kujundit soovid joonistada: "))
+    try:
+        valik = int(input("1 - viisnurk\n2 - ring\n3 - ruut\n4 - suvaline\nLisa valik (1-4): "))
+        kujunditeArv = int(input("Mitu kujundit soovid joonistada: "))
+
+    except:
+        print("game over")
+        turtle.bye()
+        loop = 0
+        break
+
+    if valik==" " or kujunditeArv==" ":
+        print("game over")
+        turtle.bye()
+        loop = 0
+        break
+
     if valik == 1:
         viisnurk(kujunditeArv)
 
@@ -114,9 +125,6 @@ while loop==1:
 
     else:
         suvaline(kujunditeArv)
-
-
-
 
 
 turtle.done()
