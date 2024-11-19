@@ -56,14 +56,13 @@ def peegelda_porkumisel():
         ring.setheading(uus_nurk)
  
 def tuvasta_kokkuporge():
-    if ring.ycor() <= -250 and ((ring.xcor() > ristkylik.xcor()-10) or (ring.xcor() > ristkylik.xcor()+20 )):
+    if ring.ycor() <= -250 and ((ring.xcor() > ristkylik.xcor()-20) and (ring.xcor() < ristkylik.xcor()+20 )):
         nurk = ring.heading()
         uus_nurkk = 360 - nurk
         ring.setheading(uus_nurkk)
         global skoor
         skoor +=1
         print(f"Skoor: {skoor}")
-
 
 def ring_liigu():
     ring.forward(kiirus)
