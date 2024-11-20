@@ -51,18 +51,27 @@ def peegelda_porkumisel():
         if uus_nurk < 0:
             uus_nurk += 360
         ring.setheading(uus_nurk)
-    if ring.ycor() >= 300 or ring.ycor() <= -300:
+    if ring.ycor() >= 300:
         uus_nurk = 360 - nurk
         ring.setheading(uus_nurk)
- 
+    if ring.ycor() <= -300:
+        print("Game Over")
+        turtle.bye()
+
 def tuvasta_kokkuporge():
-    if ring.ycor() <= -250 and ((ring.xcor() > ristkylik.xcor()-20) and (ring.xcor() < ristkylik.xcor()+20 )):
+    if ring.ycor() <= -240 and ((ring.xcor() > ristkylik.xcor()-50) and (ring.xcor() < ristkylik.xcor()+50)):
         nurk = ring.heading()
         uus_nurkk = 360 - nurk
         ring.setheading(uus_nurkk)
         global skoor
+        global kiirus
         skoor +=1
+        kiirus +=2
         print(f"Skoor: {skoor}")
+        turtle.hideturtle()
+        turtle.goto(250, 250)
+        turtle.clear()
+        turtle.write(skoor, font=("Arial", 15, "normal"))
 
 def ring_liigu():
     ring.forward(kiirus)
