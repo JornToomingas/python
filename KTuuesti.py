@@ -12,7 +12,6 @@ c = 300000000 #m/s
 #arvutus ja väljastus
 E = m * c**2
 print(E, "MJ")
-
 """
 #9. Coca-Cola automaat
 """
@@ -44,7 +43,6 @@ def eemalda_täishäälikud(tekst):
     täishäälikud = "AEIOUaeiou"
     tulemus = ''.join(täht for täht in tekst if täht not in täishäälikud)
     return tulemus
-
 #Tekst mis kasutaja sisestab
 tekst = input("Sisesta tekst: ")
 tulemus = eemalda_täishäälikud(tekst)
