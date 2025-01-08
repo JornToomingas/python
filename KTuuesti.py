@@ -37,7 +37,7 @@ def coca_automaat():
 coca_automaat()
 """
 #10. twttr
-"""
+
 #Eemaldab täishäälikud
 def eemalda_täishäälikud(tekst):
     täishäälikud = "AEIOUaeiou"
@@ -47,4 +47,3 @@ def eemalda_täishäälikud(tekst):
 tekst = input("Sisesta tekst: ")
 tulemus = eemalda_täishäälikud(tekst)
 print("Tekst ilma täishäälikuteta", tulemus)
-"""
