@@ -46,4 +46,4 @@ def eemalda_täishäälikud(tekst):
 #Tekst mis kasutaja sisestab
 tekst = input("Sisesta tekst: ")
 tulemus = eemalda_täishäälikud(tekst)
-print("Tekst ilma täishäälikuteta", tulemus)
+print("Tekst ilma täishäälikuteta: ", tulemus)
