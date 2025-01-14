@@ -8,8 +8,8 @@ import random
 # 	programm esitab korrutustehte 1p
 # 	ootab kasutajalt vastuse sisestamist 1p
 # 	kontrollib vastuse Ćµigsust 1p
-# 	vĆ¤ljastab, kas vastus oli Ćµige vĆµi vĆ¤Ć¤r. 1p
-# 	kokku antakse lahendamiseks 10 Ć¼lesannet. 1p
+# 	väljastab, kas vastus oli õige või väär. 1p
+# 	kokku antakse lahendamiseks 10 ülesannet. 1p
 
 #Genereerib 2 suvakat arvu ja annab korrutus tehte
 a, b = random.randint(1,10), random.randint(1,10),
@@ -24,10 +24,10 @@ else:
 """
 #6. Paaris või paaritu Jörn Markus Toomingas 18.12.24
 """
-# Koosta programm, mis kontrollib, kas kasutaja poolt sisestatud arv on paaris vĆµi paaritu
-# 	kuvatakse korrektne arusaadav kĆ¼simus ja vastus - 1p
-# 	eelnev kontroll, kas kasutaja ei lisanud arvu vĆµi pani nulli - 1p
-# 	kood mis teavitab paaris vĆµi paaritust arvust - 1p
+# Koosta programm, mis kontrollib, kas kasutaja poolt sisestatud arv on paaris või paaritu
+# 	kuvatakse korrektne arusaadav küsimus ja vastus - 1p
+# 	eelnev kontroll, kas kasutaja ei lisanud arvu või pani nulli - 1p
+# 	kood mis teavitab paaris või paaritust arvust - 1p
 # 	kuvatakse programmi pealkiri - 1p
 # 	kood kommenteeritud - 1p
 
@@ -123,7 +123,14 @@ else:
 """
 #16. Täringud Jörn Markus Toomingas 18.12.24
 
-#Täringud
+#KASUTAJA_KONTO JA ARVUTI_KONTO ANDSID UNDEFINEDVARIABLE ERRORI!!! (    EI TEA MIS SEE TÄHENDAB :(    )
+"""
+#  Täringud
+# 	Kasutaja võistleb kahe täringuga arvuti vastu. Kasutaja teeb pakkumise ning suurima täringupunktisumma võitja saab laual oleva raha endale juurde. Mäng kestab kuni kummalgi on raha otsas.
+# 	(Vihjed: käsi kasutajalt nime, kuva pidevalt konto seisu ja täringuviskeid, kasutajate raha hulga mängu alguses määrad sina)
+
+
+# #Täringud
 def taringud():
     taring1 = random.randint(1, 6)
     taring2 = random.randint(1, 6)
@@ -180,3 +187,4 @@ if kasutaja_konto <= 0:
     print("Kahjuks sai teil raha otsa!")
 elif arvuti_konto <= 0:
     print("Te võitsite! Arvutil sai raha otsa!")
+"""
