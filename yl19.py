@@ -2,30 +2,13 @@
 #Ülesanne 19
 import json
 
-
 kl10 = 0
 kl11 = 0
 kl12 = 0
 
 
-
 with open('haridustulemused.json', 'r', encoding='utf-8') as file:
     opilased = json.load(file)
-"""
-for opilane in opilane:
-    if opilane["klass"] == "12":
-        opilane+=1
-        print(opilane["nimi"])
-        for tegevus in opilane["tegevused"]:
-            print(tegevus)
-        print("...............")
-    if opilane["klass"] == "12":
-
-
-
-
-print(f"12 löassis õpib {kl12} õpilast")
-"""
 
 
 
@@ -35,5 +18,10 @@ for opilane in opilased:
         print(opilane["nimi"])
         for trenn in opilane["tegevused"]:
             print(trenn)
-            print(opilane["hinded"])
+        for aine, punktid in opilane["hinded"].items():
+            print(aine, punktid)
             print("-------------------------")
+
+print(f"12 klassis õpib {kl12} õpilast")
+print(f"11 klassis õpib {kl11} õpilast")
+print(f"10 klassis õpib {kl10} õpilast")
