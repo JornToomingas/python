@@ -1,5 +1,6 @@
 # Jörn Markus Toomingas 22.01.24
 # Kontrolltöö
+"""
 import requests
 import json
 url = f"https://dummyjson.com/products"
@@ -22,3 +23,4 @@ if response.status_code == 200:
     #         break
     # else:
     #    print("Toodet ei leitud.")
+"""
